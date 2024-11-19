@@ -126,5 +126,5 @@ open up you local host and port
 
     ECR_REPOSITORY_NAME = simple-app
 
-
-    (See Prediction)[http://54.227.72.163:8080/]
+# 8.  View RESULT
+    [See Prediction](http://54.227.72.163:8080/)
