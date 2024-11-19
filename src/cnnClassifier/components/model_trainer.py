@@ -70,10 +70,10 @@ class Training:
 
        
 
-        source = self.config.trained_model_path
-        destination = f"model/{self.model}"
+        # source = self.config.trained_model_path
+        # destination = f"model/{self.model}"
 
-        # Copy and replace the file
-        shutil.copy2(source, destination)
-        # print("File copied and replaced successfully!")
+        # # Copy and replace the file
+        # shutil.copy2(source, destination)
+        # # print("File copied and replaced successfully!")
 
