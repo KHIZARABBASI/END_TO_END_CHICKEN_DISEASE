@@ -1,6 +1,7 @@
 from cnnClassifier.entity.config_entity import TrainingConfig
 import tensorflow as tf
 from pathlib import Path
+import shutil
 
 class Training:
     def __init__(self, config: TrainingConfig):
@@ -66,3 +67,13 @@ class Training:
         )
 
         self.save_model(path=self.config.trained_model_path, model=self.model)
+
+       
+
+        source = self.config.trained_model_path
+        destination = f"model/{self.model}"
+
+        # Copy and replace the file
+        shutil.copy2(source, destination)
+        # print("File copied and replaced successfully!")
+
