@@ -28,3 +28,10 @@ class PredictionPipeline:
         else:
             prediction = 'Coccidiosis'
             return [{ "image" : prediction}]
+
+
+
+
+obj = PredictionPipeline("healthy.2.jpg")
+
+obj.predict()
